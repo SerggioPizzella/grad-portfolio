@@ -55,6 +55,7 @@ Chosen option: **Extending a grammar from a parser generator**, because this app
 
 **Neutral**:
 - The additional types are defined as part of the program itself.
+* It is the same parser used by Microsoft.
 
 
 ---
