@@ -1,44 +1,32 @@
 ---
 date: 2024-10-29
-title: 02 Create a custom parser
+title: 02 Parser solution
 ---
-- Status: proposed
-- Deciders: Serggio Pizzella, Luuk Horsman
-- Informed: Erik Schriek
-
-## Context and Problem Statement
-The goal is to develop a diagnostic tool that provides real-time feedback on Azure Pipeline YAML files, addressing specific developer frustrations. According to [[Survey]], the main challenges include:
 - compile-time expressions.
 - variable scope (at stage, job, and template level),
 - template parameters.
 - condition statements. 
 
-Developers frequently encounter issues in these areas, leading to lengthy troubleshooting cycles and reduced productivity. Current tools lack the capability to provide Azure-specific feedback. This ADR addresses the parsing method that will be used to achieve this.
+Current tools lack the capability to provide Azure-specific feedback. To achieve this we require a parser capable of understanding the Azure pipelines syntax, this goes beyond parsing yaml, as to give insightfull feedback, we also need to need to understand the embedded expressions. These are denoted by using `${{ }}`, `$[ ]`  or simply as function calls in the shape `function()`. This ADR addresses the parsing method that will be used to achieve this.
 
 ## Decision Drivers
 1. **Need for Azure-specific feedback**: Existing parsers do not recognize Azure-specific syntax and features.
-2. **Ease of development**: Reducing the time and expertise required to implement the method.
-3. **Maintainability**: Ensuring the solution can be adapted or updated as Azure Pipelines evolve.
-4. **Precision in Error Reporting**: Delivering specific indicators of where issues occur.
 1. **Resilient**: Must be able to handle partial/incomplete input, or input with errors.
+2. **Ease of development**: Reducing the time and expertise required to implement the method.
+4. **Precision in Error Reporting**: Delivering specific indicators of where issues occur.
+3. **Maintainability**: Ensuring the solution can be adapted or updated as Azure Pipelines evolve.
 5. **Performance**: Must re-parse efficiently to support real-time feedback during frequent edits.
 
 ## Considered Options
-- Extending `eemeli/yaml` with [Custom Tags – YAML](https://eemeli.org/yaml/#writing-custom-tags).
-- Extending `eemeli/yaml` with custom parser on top.
-- Creating a parser from Scratch, using a parser generator (ANTLR or Tree-sitter).
+- Extending [eemeli/yaml](https://eemeli.org/yaml/) with [Custom Tags – YAML](https://eemeli.org/yaml/#writing-custom-tags).
+- Extending [eemeli/yaml](https://eemeli.org/yaml/) with custom parser.
+- Extending `js-yaml` with custom parser.
+- Creating a parser from scratch, using a parser generator (ANTLR or Tree-sitter).
 - Extending a grammar from a parser generator (ANTLR or Tree-sitter).
-- Extending ESLint with a YAML Plugin.
+- Extending ESLint's [YAML Plugin](https://www.npmjs.com/package/eslint-plugin-yml).
 
 ## Decision Outcome
-Chosen option: **Extending a grammar from a parser generator**, because this approach maximizes extendibility and provides the most control over performance by leveraging a mature YAML grammar as a foundation. By building on a tested grammar, we can focus on implementing Azure-specific syntax and error handling without re-implementing YAML parsing. This option also offers flexibility for future expansions or adjustments if Azure Pipelines requirements evolve.
 
-### Consequences
-
-- **Positive**: High control over performance, with flexibility to optimize parsing based on the chosen parser language.
-- **Positive**: Strong extendibility, allowing precise Azure-specific diagnostics without needing to re-implement YAML parsing.
-- **Positive**: Adaptability for future expansions, as grammar modifications can support new Azure Pipeline syntax.
-- **Negative**: Initial setup complexity, requiring familiarity with the parser generator and grammar customization.
 
 ## Pros and Cons of the Options
 ### Extending `eemeli/yaml` with Custom Tags
@@ -55,7 +43,7 @@ Chosen option: **Extending a grammar from a parser generator**, because this app
 
 **Neutral**:
 - The additional types are defined as part of the program itself.
-* It is the same parser used by Microsoft.
+- It is the same parser used by Microsoft.
 
 
 ---
@@ -95,7 +83,7 @@ Chosen option: **Extending a grammar from a parser generator**, because this app
 
 ---
 
-### Extending ESLint with a YAML Plugin
+### Extending ESLint with a [YAML Plugin](https://www.npmjs.com/package/eslint-plugin-yml)
 
  **Pros**:
  - Integrates with existing linting infrastructure, simplifying setup for users already familiar with ESLint.
