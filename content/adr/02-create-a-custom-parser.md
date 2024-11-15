@@ -2,15 +2,11 @@
 date: 2024-10-29
 title: 02 Parser solution
 ---
-- compile-time expressions.
-- variable scope (at stage, job, and template level),
-- template parameters.
-- condition statements. 
-
-Current tools lack the capability to provide Azure-specific feedback. To achieve this we require a parser capable of understanding the Azure pipelines syntax, this goes beyond parsing yaml, as to give insightfull feedback, we also need to need to understand the embedded expressions. These are denoted by using `${{ }}`, `$[ ]`  or simply as function calls in the shape `function()`. This ADR addresses the parsing method that will be used to achieve this.
+## Context and Problem Statement
+Current tools lack the capability to provide Azure-specific feedback. To achieve this we require a parser capable of understanding the Azure pipelines syntax, this goes beyond parsing YAML, as to give insightful feedback, we also need to need to understand the embedded expressions. These are denoted by using `${{ }}`, `$[ ]`  or simply as function calls in the shape `function()`. This ADR addresses the parsing method that will be used to achieve this.
 
 ## Decision Drivers
-1. **Need for Azure-specific feedback**: Existing parsers do not recognize Azure-specific syntax and features.
+1. **Azure-specific**: Existing parsers do not recognize Azure-specific syntax and features.
 1. **Resilient**: Must be able to handle partial/incomplete input, or input with errors.
 2. **Ease of development**: Reducing the time and expertise required to implement the method.
 4. **Precision in Error Reporting**: Delivering specific indicators of where issues occur.
@@ -20,15 +16,25 @@ Current tools lack the capability to provide Azure-specific feedback. To achieve
 ## Considered Options
 - Extending [eemeli/yaml](https://eemeli.org/yaml/) with [Custom Tags – YAML](https://eemeli.org/yaml/#writing-custom-tags).
 - Extending [eemeli/yaml](https://eemeli.org/yaml/) with custom parser.
-- Extending `js-yaml` with custom parser.
+- Extending [js-yaml]([js-yaml - npm](https://www.npmjs.com/package/js-yaml)) with custom parser.
 - Creating a parser from scratch, using a parser generator (ANTLR or Tree-sitter).
 - Extending a grammar from a parser generator (ANTLR or Tree-sitter).
 - Extending ESLint's [YAML Plugin](https://www.npmjs.com/package/eslint-plugin-yml).
 
 ## Decision Outcome
 
+### Extending `eemeli/yaml` with Custom Parser on Top
+`eemeli/yaml` is the self-proclaimed "[definitive library for YAML](https://www.npmjs.com/package/yaml) it provides most of what we are looking for.
 
-## Pros and Cons of the Options
+ **Pros**:
+ - Enables complete control over Azure-specific parsing.
+ - Separates Azure-specific logic from general YAML parsing, improving maintainability if Azure or YAML specific requirements change.
+ 
+ **Cons**:
+ - Requires parsing both Azure-specific syntax and the output from `eemeli/yaml`, increasing the implementation complexity.
+
+## Other Options
+
 ### Extending `eemeli/yaml` with Custom Tags
 
 **Pros** :
@@ -43,19 +49,6 @@ Current tools lack the capability to provide Azure-specific feedback. To achieve
 
 **Neutral**:
 - The additional types are defined as part of the program itself.
-- It is the same parser used by Microsoft.
-
-
----
-
-### Extending `eemeli/yaml` with Custom Parser on Top
-
- **Pros**:
- - Enables complete control over Azure-specific parsing.
- - Separates Azure-specific logic from general YAML parsing, improving maintainability if Azure or YAML specific requirements change.
- 
- **Cons**:
- - Requires parsing both Azure-specific syntax and the output from `eemeli/yaml`, increasing the implementation complexity.
 
 ---
 
@@ -69,7 +62,10 @@ Current tools lack the capability to provide Azure-specific feedback. To achieve
  - High time and resource investment; building a reliable YAML parser from scratch is complex.
  - Performance risks due to the complexity and overhead of a fully custom parser.
 
----
+This option certainly allows us to make an Azure-specific parser. It offers the most potential to meet all the criteria, dependant on implementation. However it also requires the most knowledge and expertise, as well as requiring the most time.
+Additionally, YAML is a [Context-sensitive grammar](https://en.wikipedia.org/wiki/Context-sensitive_grammar), which results in it not being parse-able by a parser generator without additional help.
+
+--- 
 
 ### Extending a Grammar from a Parser Generator (ANTLR or Tree-sitter)
 
