@@ -1,3 +1,3 @@
 Azure pipelines
-[[Project Plan Final - Serggio Pizzella.pdf]]
+[[Project Plan.pdf]]
 [[Survey]]
