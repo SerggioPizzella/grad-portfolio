@@ -59,6 +59,9 @@ The feature is considered done when the following stories are met:
     - Test the feature and refine diagnostics.
     - Update documentation and diagrams.
 
+The feature is considered done when the following stories are met:
+	- // Add stories
+	- // not in job scope
 # Info Support - Feedback point 
 During sprint 1, on Wednesday 4th December, a feedback point with be held. The material for this meeting must be delivered by Friday 29th November. 
 - **Deliverables**:
