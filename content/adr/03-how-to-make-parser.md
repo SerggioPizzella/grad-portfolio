@@ -48,7 +48,7 @@ We can implement a simple Reverse Polish Notation calculator parser, to compare 
 %define api.value.type {double}
 %token NUM
 
-%% // Grammar rules
+//% % // Grammar rules
 // Match none or more lines
 input:
   %empty
@@ -71,11 +71,12 @@ exp:
 | exp exp '^'   { $$ = pow ($1, $2); }  /* Exponentiation */
 | exp 'n'       { $$ = -$1;          }  /* Unary minus   */
 ;
-%%
+//% %
 
 // Epilogue - any C code.
 ```
 [^1]: This example can be found [here](https://www.gnu.org/software/bison/manual/bison.html#RPN-Calc).
+[^2]: The `% %` are commented out and spaced apart as they interfere with the code being displayed.
 
 It contains a non-trivial amount of Domain Specific Syntax. Note how the we need to import header files and define tokens and types; and how the `| input line` rule, obscurely allows for multiple lines by defining `input` recursively.
 

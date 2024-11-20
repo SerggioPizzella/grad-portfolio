@@ -2,6 +2,9 @@
 date: 2024-10-29
 title: 02 Parser strategy
 ---
+- Status: approved
+- Deciders: Serggio Pizzella, Luuk Horsman.
+- Informed: Erik Schriek.
 ## Context and Problem Statement
 Current tools lack the capability to provide Azure-specific feedback. To achieve this we require a parser capable of understanding the Azure pipelines syntax, this goes beyond parsing YAML, as to give insightful feedback, we also need to need to understand the embedded expressions. These are denoted by using `${{ }}`, `$[ ]`  or simply as function calls in the shape `function()`. This ADR addresses the parsing method that will be used to achieve this.
 
