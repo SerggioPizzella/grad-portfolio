@@ -33,9 +33,13 @@ A place where the lack of documentation for Tree-sitter can be felt is when it c
 - **Bad**: Documentation, while extensive, is slightly less detailed than ANTLR's.
 
 ## Grammars
-We can implement a simple Reverse Polish Notation calculator parser, to compare the grammars.
-
-### Bison
+We can implement a simple Reverse Polish Notation calculator parser, to compare the grammars. The parser should accept inputs like:
+- 4 9 +
+- 3 7 + 3 4 5 *+-
+- 3 7 + 3 4 5 * + - n
+- 5 6 / 4 n +
+- 3 4 ^
+### Bison [^1][^2]
 ```c grammer.j
 %{ // Prologue
   #include <stdio.h>
@@ -61,7 +65,7 @@ line:
 | exp '\n'      { printf ("%.10g\n", $1); }
 ;
 
-// Expression can be either +, -, *, / or a negative number.
+// Expression can end with either +, -, *, / or 'n' for negating the number.
 exp:
   NUM
 | exp exp '+'   { $$ = $1 + $2;      }
