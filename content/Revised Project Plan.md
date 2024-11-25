@@ -36,7 +36,7 @@ Each sprint will include the following steps:
     - Update technical documentation and C4 diagrams.
 
 The feature is considered done when the following stories are met:
-	- // Add stories
+	- 
 ### Sprint 2 (Weeks 15-16): Variable Scope
 - **Goal**: Provide diagnostics for variable suggestions and scope validation.
 - **Tasks**:
