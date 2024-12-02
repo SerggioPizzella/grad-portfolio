@@ -1,6 +1,6 @@
 ---
 date: 2024-10-28
-title: Survey D.X.
+title: Survey D.X. Report
 ---
 [[Survey Report - Azure Pipelines DX .pdf]]
 ### Executive Summary
