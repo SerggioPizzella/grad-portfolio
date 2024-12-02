@@ -19,7 +19,7 @@ Current tools lack the capability to provide Azure-specific feedback. To achieve
 ## Considered Options
 - Extending [eemeli/yaml](https://eemeli.org/yaml/) with [Custom Tags – YAML](https://eemeli.org/yaml/#writing-custom-tags).
 - Extending [eemeli/yaml](https://eemeli.org/yaml/) with custom parser.
-- Extending [js-yaml]([js-yaml - npm](https://www.npmjs.com/package/js-yaml)) with custom parser.
+- Extending [js-yaml](https://www.npmjs.com/package/js-yaml) with custom parser.
 - Creating a parser from scratch.
 - Extending a grammar from a parser generator (ANTLR or Tree-sitter).
 - Extending ESLint's [YAML Plugin](https://www.npmjs.com/package/eslint-plugin-yml).

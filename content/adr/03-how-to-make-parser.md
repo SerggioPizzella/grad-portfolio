@@ -2,7 +2,7 @@
 date: 2024-11-13
 title: 03 Parsing solution
 ---
-- Status: proposed
+- Status: approved.
 - Deciders: Serggio Pizzella, Luuk Horsman.
 - Informed: Erik Schriek.
 ## Context and Problem Statement
