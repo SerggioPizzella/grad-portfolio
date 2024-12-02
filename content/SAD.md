@@ -2,7 +2,7 @@
 date: 2024-12-02
 title: Software Architecture
 ---
-![[c1.svg|]]![[c2.svg]]![[c3.svg]]
+![[c1.svg]]![[c2.svg]]![[c3.svg]]
 
 # Testing
 Using MS Test, cause that's what the guidelines say. [Unit testing | Guidance Framework](https://guidance.infosupport.com/04-technology-guidance/02-application-development/03-frameworks/01-microsoft/01-dotnetcore/unit-testing#test-framework)
@@ -17,7 +17,7 @@ For the purposes of diagnostics, we recognise 4 levels as indicated by the [LSP 
 
 | Name                               | description                                                    | Level   |
 | ---------------------------------- | -------------------------------------------------------------- | ------- |
-| **Missing Closing Curly Brackets** | Enforce closing `}}` in the same line as `${{.                 | `Error` |
+| **Missing Closing Curly Brackets** | Enforce closing `}}` in the same line as `${{`.                | `Error` |
 | **Balanced brackets**              | Enforce all opening parenthesis have a closing parenthesis.    | `Error` |
 | **Undefined Variables**            | Disallow variables undefined variables.                        | `Error` |
 | **Type Mismatches**<br>            | Disallow expression having invalid type.                       | `Error` |
