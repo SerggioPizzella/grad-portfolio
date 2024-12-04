@@ -7,7 +7,7 @@ draft: "true"
 	- [x] Make language service lib
 	- [x] Make language server exec
 - [x] Find LSP lib.
-- [ ] Make localhost input in extension.
+- [ ] The diagnostics thing is not implemented 
 - [ ] Deserialize the YAML to objects I can work with.
 - [ ] Parse out the directives.
 - [ ] Implement AST traversal.

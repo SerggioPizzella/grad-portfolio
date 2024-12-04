@@ -35,8 +35,6 @@ Each sprint will include the following steps:
     - Write unit tests for the core library.
     - Update technical documentation and C4 diagrams.
 
-The feature is considered done when the following stories are met:
-	- 
 ### Sprint 2 (Weeks 15-16): Variable Scope
 - **Goal**: Provide diagnostics for variable suggestions and scope validation.
 - **Tasks**:
@@ -47,9 +45,6 @@ The feature is considered done when the following stories are met:
     - Write unit tests and refine error messages.
     - Update technical documentation and diagrams.
 
-The feature is considered done when the following stories are met:
-	- // Add stories
-	- // not in job scope
 ### Sprint 3 (Weeks 17-18): Template Parameters
 - **Goal**: Validate template parameter definitions and usage.
 - **Tasks**:
@@ -59,9 +54,6 @@ The feature is considered done when the following stories are met:
     - Test the feature and refine diagnostics.
     - Update documentation and diagrams.
 
-The feature is considered done when the following stories are met:
-	- // Add stories
-	- // not in job scope
 # Info Support - Feedback point 
 During sprint 1, on Wednesday 4th December, a feedback point with be held. The material for this meeting must be delivered by Friday 29th November. 
 - **Deliverables**:

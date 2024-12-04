@@ -2,8 +2,9 @@
 date: 2024-12-02
 title: Software Architecture
 ---
-![[c1.svg]]![[c2.svg]]![[c3.svg]]
 
+![[c1.svg]]![[c2.svg]]![[c3.svg]]
+![[diagnostics flow.excalidraw.svg]]
 # Testing
 Using MS Test, cause that's what the guidelines say. [Unit testing | Guidance Framework](https://guidance.infosupport.com/04-technology-guidance/02-application-development/03-frameworks/01-microsoft/01-dotnetcore/unit-testing#test-framework)
 
