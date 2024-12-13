@@ -1,5 +1,6 @@
+- Status: Superseded by [[Revised Project Plan v2]]
 # Context
-At the time of writing the project is in Week 12 and Sub-question 3 from the original [[Project Plan.pdf]] has not been finalized, therefore a new plan is being instated to ensure the project meets Info Support's and Fontys' requirements within the remaining time.
+At the time of writing, the project is in Week 12 and Sub-question 3 from the original [[Project Plan.pdf]] has not been finalized, therefore a new plan is being instated to ensure the project meets Info Support's and Fontys' requirements within the remaining time.
 
 # Sprints
 The revised plan uses a sprint-based approach where research and development progress concurrently, focusing on vertical slices to deliver a functional tool with Language Server Protocol (LSP) integration. Each sprint will tackle a complete feature, from implementing core library functionality to integrating it with the LSP for real-time diagnostics. Research will be conducted on-demand, addressing specific techniques needed for the feature in focus during that sprint. Throughout the process, technical documentation and C4 diagrams will be incrementally updated to reflect new components and interactions, ensuring the deliverables remain up-to-date.

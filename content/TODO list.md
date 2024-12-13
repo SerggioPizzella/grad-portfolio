@@ -7,13 +7,14 @@ draft: "true"
 	- [x] Make language service lib
 	- [x] Make language server exec
 - [x] Find LSP lib.
-- [ ] The diagnostics thing is not implemented 
-- [ ] Deserialize the YAML to objects I can work with.
-- [ ] Parse out the directives.
+- [x] The diagnostics thing is not implemented by the lib.
+	- [x] We switch over to JS
+- [x] Deserialize the YAML to objects I can work with.
+- [x] Parse out the directives.
 - [ ] Implement AST traversal.
 - [ ] Implement basic error system.
-- [ ] Push error to IDE..
-- [ ] Push errors from parser to collection.
+- [x] Push error to IDE..
+- [x] Push errors from parser to collection.
 - [ ] Implement type checking.
 - [ ] Implement Function validation.
 	- [ ] Make collection of valid functions.
