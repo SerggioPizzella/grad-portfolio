@@ -27,9 +27,9 @@ The way of working in the sprints as well as the structure shall remain the same
 - **Must**:
 	- As a user, when I am missing a required parameter on a template, I get diagnostics, such that I can identify what is missing and where.
 	- As a user, when I provide a parameter that is not defined for the template, I get diagnostics, such that I know the parameter does not belong.
-	- As a user, when I trigger code actions on a template, I get an action to add all the required parameters for my template, such that I can work more effectively.
 	- The feature works for local template files.
 - **Should**
+	- As a user, when I trigger code actions on a template, I get an action to add all the required parameters for my template, such that I can work more effectively.
 	- As a user, when I type a parameter for a template, I get autocomplete suggestions, such that I don't need to type the full name.
 	- The feature works for remote template files.
 - **Could**
@@ -41,7 +41,9 @@ The way of working in the sprints as well as the structure shall remain the same
 	* Create a structured research document.
 	* Express why I didn't use the Microsoft SDK.
 	* Express why I didn't fork the Microsoft LSP.
+	* Express we can follow the structure from the MS service package.
 	* Express the transition from C# to JS.
+	
 ### Sprint 3 (Weeks 17-18): Variable Scope
 - **Goal**: Provide diagnostics for variable suggestions and scope validation.
 - **Tasks**:
@@ -57,10 +59,10 @@ The way of working in the sprints as well as the structure shall remain the same
 	* Express why the current extension from Microsoft isn't good enough.
 	* Express why the current extension from Christopher isn't good enough.
 
-### sprint 4 (week 19): research
-* **goal**: improve the structure and quality of the research.
+### sprint 4 (week 19): Touch-ups
+* **goal**: Review the structure and quality of the research.
 * **tasks:**
-	* Finalize a reading guide.
-	* Ensure C4 diagrams have a good explanation.
+	* Review reading guide.
+	* Review C4 diagrams + explanation.
 	* Express reflection points learned from this process.
 	* Express how the project could be extended to include suggestions 1 and 4, as I did 2 and 3.

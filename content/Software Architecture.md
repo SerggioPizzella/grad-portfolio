@@ -5,6 +5,13 @@ title: Software Architecture
 
 ![[c1.svg]]![[c2.svg]]![[c3.svg]]
 ![[diagnostics flow.excalidraw.svg]]
+![[c4 - language service.svg]]
+## Generating the diagrams
+- Generate using `npx tsuml2 --glob "./src/**/*.ts" --outMermaidDsl  "./docs/static/mermaid_diagram.dsl"`
+- Grab the nodes with [live editor](https://mermaid-js.github.io/mermaid-live-editor).
+- Import into Excalidraw.
+	- Set background to light blue.
+	- Set Sloppiness to architect.
 # Testing
 Using MS Test, cause that's what the guidelines say. [Unit testing | Guidance Framework](https://guidance.infosupport.com/04-technology-guidance/02-application-development/03-frameworks/01-microsoft/01-dotnetcore/unit-testing#test-framework)
 
