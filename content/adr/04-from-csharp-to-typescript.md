@@ -1,6 +1,6 @@
 ---
 date: 2024-12-27
-title: 04 Typescipt
+title: 04 Transition from C# to TypeScript
 ---
 - Status: Draft  
 - Deciders: Serggio Pizzella, Luuk Horsman  
