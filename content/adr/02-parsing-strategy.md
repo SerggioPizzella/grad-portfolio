@@ -5,9 +5,12 @@ title: 02 Parser strategy
 - Status: approved
 - Deciders: Serggio Pizzella, Luuk Horsman.
 - Informed: Erik Schriek.
+
+---
 ## Context and Problem Statement
 Current tools lack the capability to provide Azure-specific feedback. To achieve this we require a parser capable of understanding the Azure pipelines syntax, this goes beyond parsing YAML, as to give insightful feedback, we also need to need to understand the embedded expressions. These are denoted by using `${{ }}`, `$[ ]`  or simply as function calls in the shape `function()`. This ADR addresses the parsing method that will be used to achieve this.
 
+---
 ## Decision Drivers
 1. **Azure-specific**: Existing parsers do not recognize Azure-specific syntax and features.
 1. **Resilient**: Must be able to handle partial/incomplete input, or input with errors.
@@ -16,6 +19,7 @@ Current tools lack the capability to provide Azure-specific feedback. To achieve
 3. **Maintainability**: Ensuring the solution can be adapted or updated as Azure Pipelines evolve.
 5. **Performance**: Must re-parse efficiently to support real-time feedback during frequent edits.
 
+---
 ## Considered Options
 - Extending [eemeli/yaml](https://eemeli.org/yaml/) with [Custom Tags – YAML](https://eemeli.org/yaml/#writing-custom-tags).
 - Extending [eemeli/yaml](https://eemeli.org/yaml/) with custom parser.
@@ -24,6 +28,7 @@ Current tools lack the capability to provide Azure-specific feedback. To achieve
 - Extending a grammar from a parser generator (ANTLR or Tree-sitter).
 - Extending ESLint's [YAML Plugin](https://www.npmjs.com/package/eslint-plugin-yml).
 
+---
 ## Decision Outcome
 
 ### Extending `eemeli/yaml` with Custom Parser on Top
@@ -36,6 +41,7 @@ Current tools lack the capability to provide Azure-specific feedback. To achieve
  **Cons**:
  - Requires parsing both Azure-specific syntax and the output from `eemeli/yaml`, increasing the implementation complexity.
 
+---
 ## Other Options
 
 ### Extending `eemeli/yaml` with Custom Tags

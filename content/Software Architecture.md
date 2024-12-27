@@ -6,6 +6,7 @@ title: Software Architecture
 ![[c1.svg]]![[c2.svg]]![[c3.svg]]
 ![[diagnostics flow.excalidraw.svg]]
 ![[c4 - language service.svg]]
+![[c4 - language service - extended.svg]]
 ## Generating the diagrams
 - Generate using `npx tsuml2 --glob "./src/**/*.ts" --outMermaidDsl  "./docs/static/mermaid_diagram.dsl"`
 - Grab the nodes with [live editor](https://mermaid-js.github.io/mermaid-live-editor).

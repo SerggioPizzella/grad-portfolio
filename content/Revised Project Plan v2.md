@@ -31,11 +31,11 @@ The way of working in the sprints as well as the structure shall remain the same
 - **Should**
 	- As a user, when I trigger code actions on a template, I get an action to add all the required parameters for my template, such that I can work more effectively.
 	- As a user, when I type a parameter for a template, I get autocomplete suggestions, such that I don't need to type the full name.
-	- The feature works for remote template files.
 - **Could**
 	- As a user, when I provide a parameter of the wrong type, I get diagnostics, such that I can determine the correct type.
 	- As a user, when I reference a template, I get a action to insert all the required parameters, such that I don't need to type them.
 	- As a user, when I hover over a template parameter, I get documentation about the parameter.
+	- The feature works for remote template files.
 
 - **Docs**
 	* Create a structured research document.
@@ -66,3 +66,4 @@ The way of working in the sprints as well as the structure shall remain the same
 	* Review C4 diagrams + explanation.
 	* Express reflection points learned from this process.
 	* Express how the project could be extended to include suggestions 1 and 4, as I did 2 and 3.
+	

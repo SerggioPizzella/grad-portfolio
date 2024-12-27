@@ -3,7 +3,7 @@ date: 2024-10-28
 title: 01 Use Markdown Architectural Decision Records
 ---
 - Status: accepted
-	
+---
 ## Context and Problem Statement
 
 We want to record architectural decisions made in this project.
