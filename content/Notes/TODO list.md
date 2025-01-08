@@ -1,7 +1,3 @@
----
-draft: "true"
----
-
 - [x] Setup Core Project structure
 	- [x] Put all the projects in the same repo
 	- [x] Make language service lib

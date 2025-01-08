@@ -2,7 +2,8 @@
 date: 2024-10-28
 title: Survey D.X. Report
 ---
-> Complete report: [[Survey Report - Azure Pipelines DX .pdf]]
+> Complete report: [[Survey Report - Azure Pipelines DX .pdf]].
+> 
 > For archival purposes the survey itself is here: [[Azure DevOps pipeline survey - Google Forms.pdf | Azure DevOps pipeline survey]].
 ### Executive Summary
 
