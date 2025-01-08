@@ -102,8 +102,18 @@ _Sprint 1 has been removed._
 ### sprint 4 (week 19): Touch-ups
 * **goal**: Review the structure and quality of the research.
 * **tasks:**
-	* Review reading guide.
-	* Review C4 diagrams + explanation.
-	* Express reflection points learned from this process.
-	* Express how the project could be extended to include suggestions 1 and 4, as I did 2 and 3.
-	
+	- Review the reading guide and technical documents.
+	- Refine C4 diagrams and their explanations.
+	- Document reflections and potential future extensions for the tool.
+
+### Sprint 5 (Weeks 20-21): Overtime
+By the start of Week 20, all project documentation, including the final project report, C4 diagrams, and graduation portfolio, must be delivered. Week 19 is dedicated to ensuring that all documentation is complete and ready for submission. After submission, Week 20 allows for additional coding efforts to address any features or enhancements not completed in their respective sprints.
+    
+- **Goal:** Use the remaining time to implement and test any **should** or **could** features that were deprioritized or not completed during earlier sprints.
+- **Tasks:**
+	- Review the backlog to identify unimplemented features.
+	- Select tasks based on feasibility and their potential to improve the tool's functionality.
+	- Implement selected features and write tests to ensure quality.
+	- Update technical documentation to reflect any changes or additions.
+
+This sprint ensures no time is wasted after documentation submission and allows for further refinement of the tool; alleviating pressure from the preceding sprints. Features that remain unimplemented by the end of Week 21 will be documented as potential extensions.
