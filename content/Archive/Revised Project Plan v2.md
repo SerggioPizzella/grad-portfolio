@@ -78,7 +78,7 @@ _Sprint 1 has been removed._
 - **Diagnostics for Undefined Variables**  
     _As a user, when I reference a variable that is not defined in the current scope, I get a diagnostic message identifying the undefined variable and its location, so I can correct it._
     
-- **Variable Suggestions**  
+- **Variable Completion**  
     _As a user, when I begin typing a variable name, I get autocomplete suggestions for variables available in the current scope, so I can avoid errors and save time._
 
 #### Should

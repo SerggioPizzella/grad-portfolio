@@ -2,7 +2,7 @@
 date: 2024-10-28
 title: Survey D.X. Report
 ---
-> Complete report: [[Survey Report - Azure Pipelines DX .pdf]].
+> Complete report: [[Survey Report - Azure Pipelines DX.pdf]].
 > 
 > For archival purposes the survey itself is here: [[Azure DevOps pipeline survey - Google Forms.pdf | Azure DevOps pipeline survey]].
 ### Executive Summary
@@ -18,7 +18,7 @@ The survey, conducted among 29 Info Support developers, focused on identifying t
 1. **Top Issues:** The most problematic features were compile-time expressions, stage-level variables, predefined variables, and template parameters.
 2. **Error Messages:** Developers found Azure Pipelines’ error messages to be moderately helpful, often insufficient for quick troubleshooting.
 
-#### Recommendations
+#### [[Survey Report - Azure Pipelines DX.pdf#page=12 |Recommendations]]
 
 1. **Diagnostic Focus Areas:** High-priority diagnostics include compile-time expressions, variable scope, template parameters, and conditions at job and stage levels.
 2. **Enhanced Error Messaging:** Improved clarity in error messages could aid developers in resolving issues faster.
