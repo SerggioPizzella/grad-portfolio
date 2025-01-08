@@ -2,7 +2,8 @@
 date: 2024-10-28
 title: Survey D.X. Report
 ---
-[[Survey Report - Azure Pipelines DX .pdf]]
+> Complete report: [[Survey Report - Azure Pipelines DX .pdf]]
+> For archival purposes the survey itself is here: [[Azure DevOps pipeline survey - Google Forms.pdf | Azure DevOps pipeline survey]].
 ### Executive Summary
 
 The Azure Pipelines DX Survey Report, prepared for Info Support, explores developer frustrations with Azure Pipelines and identifies areas for improvement to enhance the developer experience. Given the challenges developers face, primarily the need to validate pipelines by running them, the survey aimed to pinpoint the most frequent issues and prioritize features for a proposed diagnostic tool.

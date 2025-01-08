@@ -1,3 +1,4 @@
+- Status: Superseded by [[Approach]]
 # Context
 At the time of writing, it is the end of week 15. The first initial [[Revised Project Plan]] has proven to be too ambitious and require more technical expertise than I can acquire in the remaining time of the internship. Therefore a new more realistic and flexible plan is being made. This time with more room for error. 
 

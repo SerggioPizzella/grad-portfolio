@@ -17,7 +17,7 @@ The project follows an agile methodology using [Kanban](https://www.atlassian.co
 
 ## Final Sprint Plan
 Each sprint addresses a complete feature or aspect of the tool.
-
+> The planning begins on sprint 2, as sprint 1 was discarded due to it's unfeasibility and overly ambitious scope. 
 ### Sprint 2 (Weeks 15-16): Template Parameters
 - **Goal:** Validate and provide diagnostics for template parameter definitions and usage.
 - **Tasks:**
