@@ -26,3 +26,9 @@ The survey, conducted among 29 Info Support developers, focused on identifying t
 #### Conclusion
 
 The proposed diagnostic tool, guided by these insights, can substantially reduce troubleshooting time and improve productivity by providing real-time, in-editor feedback on common Azure Pipeline issues.
+
+> As part of the information gathering process, some follow-up interviews were conducted. There results hereof were ultimately not included in the report, as they were conducted after the reports delivery, and the information aligned with the findings already present. For archival purposes the interviews can be found here:
+> 	- [[Azure Pipelines survey follow-up-20241011_111947-Meeting Recording.mp4 |Survey follow-up 2024-10-11]]
+> 	- [[Azure Pipelines survey follow-up-20241011_103220-Meeting Recording.mp4|Survey follow-up 2024-10-11]]
+> 	- [[Azure Pipelines survey follow-up-20241014_100541-Meeting Recording.mp4|Survey follow-up 2024-10-11]]
+> 	- [[Recording.m4a |Survey follow-up 2024-10-15]]

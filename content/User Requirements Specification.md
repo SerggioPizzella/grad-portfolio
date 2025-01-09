@@ -77,7 +77,7 @@ These are categorized by the recommendations made in the [[Survey#Survey Report 
 - **FR-7: Error Recovery for Partial Input**  
     _As a user, when I write a partial or incomplete compile-time expression, I still receive diagnostic feedback for the complete portions, so I can iteratively refine the expression._
 
-
+---
 ### Template Parameters
 #### Must
 - **FR-8: Missing Required Parameter Diagnostics**  
