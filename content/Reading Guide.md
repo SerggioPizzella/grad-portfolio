@@ -17,8 +17,6 @@ I aligned my research activities with the HBO-ICT research framework, selecting 
 **Iterative Development and Feedback Application:**  
 The project plan underwent four iterations. For each, I actively sought feedback from stakeholders and integrated their suggestions to improve the plan. While the final version was delivered within the available time constraints, I noted areas for future improvement, showing my ability to balance quality with deadlines. This iterative process showcases **Professional Duties** through delivering professional-grade documentation, **Targeted Interaction** by effectively communicating and integrating feedback, and **Personal Leadership** in evaluating and accepting constructive criticism.
 
-  
-
 ## [[User Requirements Specification]]
 
 **Learning Outcomes Addressed:**

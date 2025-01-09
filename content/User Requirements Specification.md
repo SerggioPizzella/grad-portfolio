@@ -48,6 +48,11 @@
     The tool must include clear, up-to-date documentation covering setup, usage, configuration, and troubleshooting.
 
 ---
+#### Operation
+- **NFR-14**: **Local Execution**  
+	The tool must operate primarily on the local machine, achieving as much functionality as possible without relying on external services. Any external service calls (e.g., for fetching templates or credentials) should be minimal, and must not prevent the tool from operating.
+
+---
 ## Functional Requirements
 These are categorized by the recommendations made in the [[Survey#Survey Report - Azure Pipelines DX.pdf page=12 Recommendations |Survey Recommendations]]. For each category we determine it's `MoSCoW` requirements. Once a category meet's all it's `Must` requirements, we can fairly say that the tool supports the Category and has fulfilled the recommendation.
 ### Compile-Time Expressions
