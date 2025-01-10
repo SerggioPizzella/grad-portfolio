@@ -37,7 +37,7 @@
 - **NFR-11**: **Continuous Integration**  
     A Continuous Integration (CI) pipeline must be in place to:
     - Automatically build the tool.
-    - Run all tests and perform code quality analysis on code commits.
+    - Run all tests and perform code quality analysis.
 	
 - **NFR-12**: **Performance Testing**  
     Performance benchmarks (e.g., sub-second diagnostics) must be validated through regular performance testing, and code should be optimized if benchmarks are not met.

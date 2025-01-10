@@ -15,10 +15,13 @@ In alignment with our [[User Requirements Specification#User-Friendliness |User 
 
 Developers interact with their editor of choice, which in turn connects to our solution. As Azure Pipelines often include references to external files; located either in the same repository or in external repositories; our architecture must facilitate communication with both local file systems and remote repositories.
 ![[c1.svg]]
+
+---
 ## C2
-In order to meet **NFR-2: IDE Independence**, our design must be able to integrate with multiple editors. Generating separate solutions for each editor would be unmaintainable. Instead, we leverage the Language Server Protocol (LSP), an industry standard developed by Microsoft, supported by most modern editors, including VS Code, Neovim, and Visual Studio. LSP enables an editor to communicate with a centralized service providing language-specific features. Therefore, our solution will be a language server.[^1]
+In order to meet **NFR-2: IDE Independence**, our design must be able to integrate with multiple editors. Generating separate solutions for each editor would be unmaintainable. Instead, we leverage the Language Server Protocol (LSP), an industry standard developed by Microsoft, supported by most modern editors, including VS Code, Neovim, and Visual Studio. LSP enables an editor to communicate with a centralized service providing language-specific features. Therefore, our solution will be a language server.[^1][^2] This inadvertently also complies with our [[User Requirements Specification#Operation |Operational]] requirements. 
 
 [^1]: [Official page for Language Server Protocol](https://microsoft.github.io/language-server-protocol/)
+[^2]: [LSP Explained (in 5 Minutes)](https://www.youtube.com/watch?v=LaS32vctfOY)
 
 This approach does mean that our solution will not be able to communicate with a key editor: the Azure DevOps in-browser editor. Developers sometimes use this editor for debugging, as noted from the [[Survey#Follow-Up Interviews|Interviews]], since it provides additional diagnostics. However, due to the technical complexity and differing focus of a in-browser cloud-based editor, support for it has been ruled out as a priority. This compromise is deemed acceptable given the project's scope and objectives.
 > ==**Confirm if I can say that for real with Luuk.**==
@@ -27,10 +30,27 @@ The primary editor at Info Support is Visual Studio Code (VS Code), and it will 
 
 The architecture is designed to accommodate additional editors and features with minimal changes, ensuring long-term flexibility. The following diagram illustrates this setup.
 ![[c2.svg]]
-## C3
 
+---
+## C3 Language Server
+Here we will take a closer look at the Language Server system. It is comprised of three primary packages:
+
+- **Language Server (I/O Layer):** Acts as a thin interface implementing the Language Server Protocol (LSP), handling communication between the editor and the underlying logic.
+- **Language Service:** Contains the core functionality and logic for processing, analysing, and providing language features.
+- **Tree-sitter Parser:** A specialized parser designed to handle the expressions within Azure Pipelines YAML files.
+
+This design draws inspiration from Microsoft's own [Azure Pipelines Language Server](https://github.com/microsoft/azure-pipelines-language-server/tree/main?tab=readme-ov-file#developer-support), which separates the I/O server package from the service package containing the main functionality. As highlighted in this [video](https://youtu.be/p0Vlz66AFNw?feature=shared&t=187), a key advantage of this architecture is **code reuse**, enabling greater flexibility and scalability. 
+
+By adopting this modular approach, the system can later support additional interfaces, such as:
+- **Software SDK:** To integrate the functionality programmatically.
+- **CLI Tool:** For automated error-checking in CI environments.
+
+These potential extensions are depicted in **Pink**. 
 ![[c3.svg]]
+
+## Diagnostics
 ![[diagnostics flow.excalidraw.svg]]
+## C4 Language Service
 ![[c4 - language service.svg]]
 ![[c4 - language service - extended.svg]]
 ### Generating the diagrams
