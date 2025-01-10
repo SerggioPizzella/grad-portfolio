@@ -1,1 +1,1 @@
-For a project report, pleae complete guide, please read the [[Reading Guide]].
+For a complete project report, please read [[Project Report.pdf]]. Otherwise feel free to jump around or follow the [[Reading Guide]].
