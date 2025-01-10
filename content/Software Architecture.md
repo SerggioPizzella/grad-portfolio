@@ -37,7 +37,7 @@ Here we will take a closer look at the Language Server system. It is comprised o
 
 - **Language Server (I/O Layer):** Acts as a thin interface implementing the Language Server Protocol (LSP), handling communication between the editor and the underlying logic.
 - **Language Service:** Contains the core functionality and logic for processing, analysing, and providing language features.
-- **Tree-sitter Parser:** A specialized parser designed to handle the expressions within Azure Pipelines YAML files.
+- **Parser:** A specialized parser designed to handle the expressions within Azure Pipelines YAML files.
 
 This design draws inspiration from Microsoft's own [Azure Pipelines Language Server](https://github.com/microsoft/azure-pipelines-language-server/tree/main?tab=readme-ov-file#developer-support), which separates the I/O server package from the service package containing the main functionality. As highlighted in this [video](https://youtu.be/p0Vlz66AFNw?feature=shared&t=187), a key advantage of this architecture is **code reuse**, enabling greater flexibility and scalability. 
 
