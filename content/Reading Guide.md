@@ -43,13 +43,26 @@ The specification was structured to include:
 Once defined, the user stories were included in the agile board, integrating them with the sprint-based development approach. This step highlights my ability to bridge planning with execution while ensuring visibility and alignment with the chosen approach.
 
 ## [[Software Architecture]]
+**Learning Outcomes Addressed:**
+- Professional Duties
+- Situation orientation
+- Future-Oriented Organisation
+- Investigative Problem Solving
+- Targeted Interaction
+
+**Architectural Decisions and Documentation:**  
+Throughout the project, I documented big architectural decisions using the MADR (Markdown Architectural Decision Records) template, as detailed in the [ADRs](https://grad.serggio.dev/ADR/). This approach ensured and a clear and defensible rational for each decision, exemplifying **Professional Duties** and **Investigative Problem Solving** by applying industry-recognized practices and conducting thorough evaluations of alternatives.
+
+**Use of Standardized Models:**  
+The architecture was visualized using the C4 model, supported by sequence diagrams and additional diagrams where needed. This adherence to industry standards ensured that the design was clear, communicable, and easily understandable for stakeholders, reflecting **Professional Duties** and **Situation Orientation** by adapting to the audiences’ expectations.
+
+**Guiding Principles:**  
+The architecture design was guided by the project's non-functional requirements (e.g., IDE independence, seamless integration, real-time validation). These constraints were come from the User Requirements Specification and aligned with stakeholder needs, showcasing **Future-Oriented Organisation** by considering scalability and maintainability.
+
+**Iterative Updates:**  
+The architecture evolved alongside the project, with incremental updates to reflect changes in scope and features. This continuous alignment with the project illustrates **Future-Oriented Organisation** ensuring that the architecture remained relevant and effective.
+
+**Stakeholder Collaboration:**  
+I regularly presented architectural decisions and diagrams to stakeholders for feedback, adapting designs based on their input. The initial idea do add future extensions within the diagrams, came from them. This demonstrates **Situation Orientation** and **Targeted Interaction**, ensuring the architecture aligned with stakeholder expectations and projects’ goals.
 ## [[Test Plan]]
 🚧🚧 Under construction 🚧🚧
-
-This project consist of research and planning documents, as well as ADR's.
-
-The initial [[Project Plan.pdf]] was made at the start of the project, with the goal of guiding it. Due to external complications the project desynchronised with the original plan, and as a result a [[Revised Project Plan]] was made.
-As part of researching what developers need, a survey was conducted and the result was this report [[Survey]]. To further aid in the structured development of the project, Architectural Decisions Records (ADR) were made. Thus far the project contains the following:
-- [[01-use-markdown-architectural-decision-records| Use ADR's]]
-- [[02-parsing-strategy | Parsing Strategy]]
-- [[03-how-to-make-parser | Parsing Solution ]]
