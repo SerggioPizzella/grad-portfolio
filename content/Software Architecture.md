@@ -37,8 +37,17 @@ Here we will take a closer look at the Language Server system. It is comprised o
 
 - **Language Server (I/O Layer):** Acts as a thin interface implementing the Language Server Protocol (LSP), handling communication between the editor and the underlying logic.
 - **Language Service:** Contains the core functionality and logic for processing, analysing, and providing language features.
-- **Parser:** A specialized parser designed to handle the expressions within Azure Pipelines YAML files.
+- **Tree-sitter Parser:** A specialized parser designed to handle the expressions within Azure Pipelines YAML files.
 
+### Parser
+Azure pipelines allows the user to programmatically define their pipelines, by means of using compile-time and runtime expressions. The decision to modularize the **Parser** stems from a deliberate architectural choice to keep parsing responsibilities separate from the main service. This separation:
+
+- Ensures the **Language Service** focuses on delivering language features without being burdened by parsing complexities.
+- Enables the parser to evolve independently, accommodating updates or changes in Azure Pipelines’ syntax.
+
+Parsing expressions involves generating Abstract Syntax Trees (ASTs) to facilitate reasoning and diagnostics. As this functionality goes beyond the scope of the main service, it has been designated as an **architectural boundary** and implemented as its own package.
+
+### Inspiration
 This design draws inspiration from Microsoft's own [Azure Pipelines Language Server](https://github.com/microsoft/azure-pipelines-language-server/tree/main?tab=readme-ov-file#developer-support), which separates the I/O server package from the service package containing the main functionality. As highlighted in this [video](https://youtu.be/p0Vlz66AFNw?feature=shared&t=187), a key advantage of this architecture is **code reuse**, enabling greater flexibility and scalability. 
 
 By adopting this modular approach, the system can later support additional interfaces, such as:
@@ -48,10 +57,10 @@ By adopting this modular approach, the system can later support additional inter
 These potential extensions are depicted in **Pink**. 
 ![[c3.svg]]
 
-## Diagnostics
-![[diagnostics flow.excalidraw.svg]]
 ## C4 Language Service
 ![[c4 - language service.svg]]
+### Diagnostics
+![[diagnostics flow.excalidraw.svg]]
 ![[c4 - language service - extended.svg]]
 ### Generating the diagrams
 In order to streamline C4 level diagram generation we use `tsuml2` to generate a complete diagram of the application; then we use an editor to select and extract the nodes we care about; and lastly import them into Excalidraw, where all diagrams are made.
