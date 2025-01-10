@@ -8,7 +8,7 @@ This page links to the professional products, and describes which learning outco
 - Personal Leadership
 - Targeted Interaction
 
-**Initiating and Defining the Project Scope:**
+**Initiating and Defining the Project Scope:** 
 At the start of the project, I recognized gaps in my understanding of the intent and requirements. This led me to proactively engage with stakeholders, including Romijn M. and Brandt J., and arrange a meeting with my company mentor and Romijn M. Through this initiative, I clarified the project scope and refined the expectations. The notes for this meeting can be found [here](https://grad.serggio.dev/Notes/Maarten-QA.pdf).This demonstrates **Targeted Interaction** through stakeholder engagement and **Personal Leadership** in taking ownership of unclear requirements and clarifying them.
 
 **Structured Research Approach:**  
@@ -43,6 +43,9 @@ The specification was structured to include:
 Once defined, the user stories were included in the agile board, integrating them with the sprint-based development approach. This step highlights my ability to bridge planning with execution while ensuring visibility and alignment with the chosen approach.
 
 ## [[Software Architecture]]
+## [[Test Plan]]
+🚧🚧 Under construction 🚧🚧
+
 This project consist of research and planning documents, as well as ADR's.
 
 The initial [[Project Plan.pdf]] was made at the start of the project, with the goal of guiding it. Due to external complications the project desynchronised with the original plan, and as a result a [[Revised Project Plan]] was made.
@@ -50,7 +53,3 @@ As part of researching what developers need, a survey was conducted and the resu
 - [[01-use-markdown-architectural-decision-records| Use ADR's]]
 - [[02-parsing-strategy | Parsing Strategy]]
 - [[03-how-to-make-parser | Parsing Solution ]]
-
-🚧🚧 Under construction 🚧🚧
-- [[Software Architecture]]
-- [[Revised Project Plan v2]]
