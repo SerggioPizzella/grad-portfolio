@@ -18,7 +18,7 @@ Developers interact with their editor of choice, which in turn connects to our s
 ## C2
 In order to meet **NFR-2: IDE Independence**, our design must be able to integrate with multiple editors. Generating separate solutions for each editor would be unmaintainable. Instead, we leverage the Language Server Protocol (LSP), an industry standard developed by Microsoft, supported by most modern editors, including VS Code, Neovim, and Visual Studio. LSP enables an editor to communicate with a centralized service providing language-specific features. Therefore, our solution will be a language server.[^1]
 
-[^1: kasdjflakjdflajsdflkjasdlkfjkljdfkjasdlkfj]
+[^1]: [Official page for Language Server Protocol](https://microsoft.github.io/language-server-protocol/)
 
 This approach does mean that our solution will not be able to communicate with a key editor: the Azure DevOps in-browser editor. Developers sometimes use this editor for debugging, as noted from the [[Survey#Follow-Up Interviews|Interviews]], since it provides additional diagnostics. However, due to the technical complexity and differing focus of a in-browser cloud-based editor, support for it has been ruled out as a priority. This compromise is deemed acceptable given the project's scope and objectives.
 > ==**Confirm if I can say that for real with Luuk.**==
