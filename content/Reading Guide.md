@@ -1,3 +1,4 @@
+# Professional Products
 This page links to the professional products, and describes which learning outcome they contribute to and why.
 
 ## [[Project Plan.pdf |Project Plan]]
@@ -66,3 +67,5 @@ The architecture evolved alongside the project, with incremental updates to refl
 I regularly presented architectural decisions and diagrams to stakeholders for feedback, adapting designs based on their input. The initial idea do add future extensions within the diagrams, came from them. This demonstrates **Situation Orientation** and **Targeted Interaction**, ensuring the architecture aligned with stakeholder expectations and projects’ goals.
 ## [[Test Plan]]
 🚧🚧 Under construction 🚧🚧
+
+# Activities

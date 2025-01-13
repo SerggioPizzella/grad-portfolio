@@ -31,25 +31,25 @@
 
 ---
 #### Testing and Reliability
-- **NFR-10**: **Test Coverage**  
+- **NFR-8**: **Test Coverage**  
     The tool must achieve at least 80% unit test coverage for all significant pieces of code.
     
-- **NFR-11**: **Continuous Integration**  
+- **NFR-9**: **Continuous Integration**  
     A Continuous Integration (CI) pipeline must be in place to:
     - Automatically build the tool.
     - Run all tests and perform code quality analysis.
 	
-- **NFR-12**: **Performance Testing**  
+- **NFR-10**: **Performance Testing**  
     Performance benchmarks (e.g., sub-second diagnostics) must be validated through regular performance testing, and code should be optimized if benchmarks are not met.
 
 ---
 #### Documentation
-- **NFR-13**: **Technical Documentation**  
+- **NFR-11**: **Technical Documentation**  
     The tool must include clear, up-to-date documentation covering setup, usage, configuration, and troubleshooting.
 
 ---
 #### Operation
-- **NFR-14**: **Local Execution**  
+- **NFR-12**: **Local Execution**  
 	The tool must operate primarily on the local machine, achieving as much functionality as possible without relying on external services. Any external service calls (e.g., for fetching templates or credentials) should be minimal, and must not prevent the tool from operating.
 
 ---
@@ -87,22 +87,21 @@ These are categorized by the recommendations made in the [[Survey#Survey Report 
 #### Must
 - **FR-8: Missing Required Parameter Diagnostics**  
     _As a user, when I fail to provide a required parameter for a template, I get a diagnostic message indicating the missing parameter and where it is required, so I can add it._
-	
 	**Acceptance Criteria 1:**
 	When the `parameters` key is missing, the diagnostics must be placed on the `template` key.
-	
+
 	**Acceptance Criteria 2:**
 	When a parameter is missing, the diagnostics must be placed on the `parameters` key.
-	
+
 	**Acceptance Criteria 3:**
 	When a parameter's value is missing, the diagnostics must be placed on the respective parameter's key.
    
-- **FR-9: Undefined Parameter Diagnostics**  
-    _As a user, when I include a parameter not defined in the template, I get a diagnostic message highlighting the undefined parameter, so I can correct the mistake._
-    
+* **FR-9: Undefined Parameter Diagnostics**  
+    _As a user, when I include a parameter not defined in the template, I get a diagnostic message highlighting the undefined parameter, so I can correct the mistake._ 
+ 
 - **FR-10: Local Template Support**  
     _As a user, when I use local template files, I receive diagnostics for missing or undefined parameters, ensuring the feature is fully functional for local templates._
-    
+
 #### Should
 - **FR-11: Code Actions for Required Parameters**  
     _As a user, when I trigger a code action on a template, I receive an option to add all required parameters for that template, making the process more efficient._
@@ -180,16 +179,16 @@ These are categorized by the recommendations made in the [[Survey#Survey Report 
     _As a user, when I use an undefined or incorrect function in a condition, I receive a diagnostic message, so I can fix the function call._
 
 #### Should
-- **FR-26: Condition Expression Suggestions**  
+- **FR-24: Condition Expression Suggestions**  
     _As a user, when I begin writing a condition, I get suggestions for valid expressions and functions, so I can write correct conditions faster._
     
-- **FR-27: Validation of Nested Conditions**  
+- **FR-25: Validation of Nested Conditions**  
     _As a user, when I write a nested condition, I receive diagnostics for errors in each part of the condition, so I can fix them comprehensively._
     
 
 #### Could
-- **FR-28: Condition Debugging Feedback**  
+- **FR-26: Condition Debugging Feedback**  
     _As a user, when a condition fails at runtime, I receive information about which part of the condition caused the failure, so I can debug effectively._
     
-- **FR-29: Contextual Autocomplete for Conditions**  
+- **FR-27: Contextual Autocomplete for Conditions**  
     _As a user, when I write a condition in a specific context (job or stage level), I receive autocomplete suggestions for variables and expressions relevant to that context._
