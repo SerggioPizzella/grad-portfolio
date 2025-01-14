@@ -68,4 +68,32 @@ I regularly presented architectural decisions and diagrams to stakeholders for f
 ## [[Test Plan]]
 🚧🚧 Under construction 🚧🚧
 
+## [[Survey]]
+**Learning Outcomes Addressed:**
+- Professional Duties
+- Targeted Interaction
+- Investigative Problem Solving
+- Personal Leadership
+
+**Objective and Approach:**  
+The survey aimed to identify and prioritize problematic features in Azure Pipelines to guide the development of a diagnostic tool. To make the questions clearer, I added links to official documentation for each feature, ensuring accessibility and usability for participants. This demonstrates **Professional Duties** and **Targeted Interaction** by creating a thoughtful and professional survey.
+
+When responses were slow, I adapted my approach by searching for additional relevant Slack channels and asking colleagues directly to fill out the survey. This flexibility and effort to engage participants reflect **Targeted Interaction** and **Personal Leadership**, as I focused on encouraging collaboration to achieve the project’s goals.
+
+**Feedback and Analysis:** 
+I sought feedback on the survey design and noted suggestions for future improvement, even if I didn’t apply them immediately, showing **Professional Duties** by maintaining a continuous improvement mindset. After collecting responses, I used a weighted scoring method to rank features based on severity, frequency, and proficiency. Going beyond the rankings, I analysed the data to develop actionable recommendations, demonstrating **Investigative Problem Solving** by identifying root causes and proposing targeted solutions.
+
+**Collaboration:**  
+Throughout the process, I incorporated feedback from stakeholders to ensure the report’s relevance and clarity, showcasing **Targeted Interaction**.
+
 # Activities
+
+# Learning Outcomes
+| Outcome                       | Evidence                                                                                                                |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Professional Duties           | [[#Project Plan.pdf Project Plan]]<br>[[#User Requirements Specification]]<br>[[#Software Architecture]]<br>[[#Survey]] |
+| Situation Orientation         | [[#User Requirements Specification]]<br>[[#Software Architecture]]<br>                                                  |
+| Future-Oriented Organisation  | [[#Project Plan.pdf Project Plan]]<br>[[#User Requirements Specification]]<br>[[#Software Architecture]]                |
+| Investigative Problem Solving | [[#Project Plan.pdf Project Plan]]<br>[[#Software Architecture]]<br>[[#Survey]]                                         |
+| Personal Leadership           | [[#Project Plan.pdf Project Plan]]<br>[[#Survey]]                                                                       |
+| Targeted Interaction          | [[#Project Plan.pdf Project Plan]]<br>[[#Software Architecture]]<br>[[#Survey]]<br>                                     |

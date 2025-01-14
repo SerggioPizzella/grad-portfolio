@@ -24,7 +24,6 @@ In order to meet **NFR-2: IDE Independence**, our design must be able to integra
 [^2]: [LSP Explained (in 5 Minutes)](https://www.youtube.com/watch?v=LaS32vctfOY)
 
 This approach does mean that our solution will not be able to communicate with a key editor: the Azure DevOps in-browser editor. Developers sometimes use this editor for debugging, as noted from the [[Survey#Follow-Up Interviews|Interviews]], since it provides additional diagnostics. However, due to the technical complexity and differing focus of a in-browser cloud-based editor, support for it has been ruled out as a priority. This compromise is deemed acceptable given the project's scope and objectives.
-> ==**Confirm if I can say that for real with Luuk.**==
 
 The primary editor at Info Support is Visual Studio Code (VS Code), and it will serve as our primary focus. The LSP integration in VS Code is facilitated by an extension, which acts as a bridge between the language server and the editor. This extension merely initializes the connection and can be published and installed easily, satisfying **NFR-1: Seamless Integration**.
 
@@ -70,3 +69,6 @@ In order to streamline C4 level diagram generation we use `tsuml2` to generate a
 - Import into Excalidraw.
 	- Set background to light blue.
 	- Set Sloppiness to architect.
+
+# Technology
+Using MS Test, cause that's what the guidelines say. [Unit testing | Guidance Framework](https://guidance.infosupport.com/04-technology-guidance/02-application-development/03-frameworks/01-microsoft/01-dotnetcore/unit-testing#test-framework)
