@@ -29,8 +29,8 @@ Each sprint addresses a complete feature category. Due to time constraints it wa
 	- Update technical documentation and C4 diagrams.
 
 - **Priorities:**
-	- [[User Requirements Specification#Template Parameters#Must |Must requirements]]
-	- [[User Requirements Specification#Template Parameters#Should |Should requirements]]
+	- Must requirements
+	- Should requirements
 
 ### Sprint 3 (Weeks 17-18): Variables
 - **Goal:** Provide diagnostics for variable suggestions and scope validation.
@@ -42,18 +42,18 @@ Each sprint addresses a complete feature category. Due to time constraints it wa
 	- Update technical documentation and diagrams.
 
 - **Priorities:**
-	- [[User Requirements Specification#Variables#Must |Must requirements]]
-	- [[User Requirements Specification#Variables#Should |Should requirements]]
+	- Must requirements
+	- Should requirements
 
-### Sprint 4 (Week 19): Touch-Ups
+### Sprint 4 (Week 19-20): Documentation
 - **Goal:** Finalize documentation and ensure deliverable quality.
 - **Tasks:**
 	- Review the reading guide and technical documents.
 	- Refine C4 diagrams and their explanations.
 	- Document reflections and potential future extensions for the tool.
 
-### Sprint 5 (Weeks 20-21): Overtime
-By the start of Week 20, all project documentation, including the final project report, C4 diagrams, and graduation portfolio, must be delivered. Week 19 is dedicated to ensuring that all documentation is complete and ready for submission. After submission, Week 20 allows for additional coding efforts to address any features or enhancements not completed in their respective sprints.
+### Sprint 5 (Weeks 21-22): Overtime
+By the start of Week 20, all project documentation, including the final project report, C4 diagrams, and graduation portfolio, must be delivered. Week 19 is dedicated to ensuring that all documentation is complete and ready for submission. After submission, Weeks 21 and 22 allow for additional coding efforts to address any features or enhancements not completed in their respective sprints.
 
 - **Goal:** Use the remaining time to implement and test any **should** or **could** features that were deprioritized or not completed during earlier sprints.
 - **Tasks:**
@@ -62,7 +62,7 @@ By the start of Week 20, all project documentation, including the final project 
 	- Implement selected features and write tests to ensure quality.
 	- Update technical documentation to reflect any changes or additions.
 
-This sprint ensures no time is wasted after documentation submission and allows for further refinement of the tool; alleviating pressure from the preceding sprints. Features that remain unimplemented by the end of Week 21 will be documented as potential extensions.
+This sprint ensures no time is wasted after documentation submission and allows for further refinement of the tool; alleviating pressure from the preceding sprints. Features that remain unimplemented by the end of Week 22 will be documented as potential extensions.
 
 ### Key Changes Across Versions
 1. **Integration of Research and Development:** The initial plan had separate phases for research and implementation. This was revised to combine them within sprints, improving flexibility and alignment with project goals.
