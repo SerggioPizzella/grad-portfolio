@@ -57,9 +57,20 @@ These potential extensions are depicted in **Pink**.
 ![[c3.svg]]
 
 ## C4 Language Service
+Here we take an in-dept look at the Language service package.
+
+The package is designed for simplicity and efficiency, featuring a single entry point: the `LanguageService`. This entry point serves as the central hub, providing all functionality through a set of well-defined interfaces. The Language Server Protocol (LSP) defines numerous language features, and to maintain a clear separation of concerns, we considered using a distinct class for each feature. However, given the complexity of Azure Pipelines, where multiple LSP features intersect with various pipeline-specific functionalities, we adopted a more granular approach.
+
+For each language feature defined by the LSP, such as `textDocument/completion`, we created a dedicated interface. This interface is then implemented by separate classes, each addressing a specific aspect of Azure Pipelines, such as template parameter completion, variable completion, or key completion. This modular structure ensures that each implementing class focuses on a single concern, making the system more maintainable and extensible.
+
+The `LanguageService` acts as the orchestrator, combining the results from all these specialized classes into a cohesive response. This approach not only adheres to the principle of separation of concerns but also ensures that the package remains flexible and scalable.
 ![[c4 - language service.svg]]
-### Diagnostics
-![[diagnostics flow.excalidraw.svg]]
+
+### C4 Language Service - Extensions
+Here we demonstrate how the architecture allows for further expansion.
+
+In purple we depict how additional features could be added using existing interfaces, alongside existing features.
+
 ![[c4 - language service - extended.svg]]
 ### Generating the diagrams
 In order to streamline C4 level diagram generation we use `tsuml2` to generate a complete diagram of the application; then we use an editor to select and extract the nodes we care about; and lastly import them into Excalidraw, where all diagrams are made.
